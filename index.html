@@ -7,6 +7,9 @@
         <meta property="og:title" content="Aurora's bar and gill in Ambergris Caye, Belize" />
         <link rel="icon" type="image/x-icon" href="assets/shark -fin.jpg">
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Mochiy+Pop+P+One&family=Permanent+Marker&family=Zen+Kurenaido&display=swap" rel="stylesheet">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/script" src="scripts.js"></script>
     </head>
@@ -14,12 +17,13 @@
         
         <main>
             <nav>
-                <button id="menuBtn" type="button"><a href="#menuDiv">menu</a></button>
-                <button id="contactBtn" type="button"><a href="contacts.html">contact</a></button>
-                <button id="imagesBtn" type="button"><a href="#imageBox">images</a></button>
+                <button id="menuBtn" type="button" onclick="location.href='#menuDiv'">menu</button>
+
+                <button id="contactBtn" type="button" onclick="location.href='contacts.html'">contact</button>
+                <button id="imagesBtn" type="button" onclick="location.href='#imageBox'">images</button>
             </nav>
 
-            <h1 id="title">Aurora's</h1>   
+            <h1 id="title"><em>AURORA'S</em></h1>   
             <h2>bar - grill - catering</h2>
             <img class="moving-fish small-fish-at-rest hidden" id="small-fish" src="assets/tropical-fish4.png">
             <img class="moving-fish blue-fish-at-rest hidden" id="blue-fish" src="assets/blue-fish4.png">
@@ -54,7 +58,12 @@
             <img class="beachImages" id="" src="assets/sign2.jpg">
             <img class="beachImages" id="" src="assets/spike-tail-black-iguana.jpg">
         </section>
-        <script>    
+
+
+        <script> type="text/javascript"  
+            // document.getElementById("menuBtn").onclick = function () {
+            // location.href = "www.cnn.com";
+
             function smallFishJumps(){
                 smallFish=document.getElementById('small-fish');
                 smallFish.classList.replace("hidden","visible");

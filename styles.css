@@ -1,4 +1,9 @@
-/* @import url(google.fonts//); */
+/* @import url(google.fonts//); 
+font-family: 'Comfortaa', cursive;
+font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Zen Kurenaido', sans-serif; */
+
 body{
     height: 2500px;
 }
@@ -13,10 +18,13 @@ nav {
     opacity: 90%;
 }
 button {
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    padding: -14px 0 14px 0;
     margin: 0 10px 0 0;
     cursor: crosshair;
     height: 20px;
-    width: 60px ;
+    width: 80px ;
 }
 main {
     /* font-family: 'Courier New', Courier, monospace; */
@@ -32,12 +40,14 @@ main {
 }
 
 h1 {
+    font-family: 'Mochiy Pop P One', sans-serif;
     background: linear-gradient (to bottom, #33ccff 0%, #ff99cc 100%); 
     color: rgb(50, 81, 205);
     text-align: center;
 }
 
 h2 {
+    font-family: 'Zen Kurenaido', sans-serif; 
     text-align: center;
     color:rgb(50, 81, 205);
     margin: -24px 0 0 0;
@@ -50,6 +60,7 @@ h2 {
     z-index: 10;
 }
 .directions{
+    font-family: 'Zen Kurenaido', sans-serif; 
     background-color: white;
     padding: 5px;
 }
