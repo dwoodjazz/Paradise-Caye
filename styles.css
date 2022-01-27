@@ -1,0 +1,155 @@
+/* @import url(google.fonts//); */
+body{
+    height: 2500px;
+}
+nav {
+    position: relative;
+    text-align: center;
+    color: black;
+    display: block;
+    font-size: 12px;
+    width: 100%;
+    z-index: 10;
+    opacity: 90%;
+}
+button {
+    margin: 0 10px 0 0;
+    cursor: crosshair;
+    height: 20px;
+    width: 60px ;
+}
+main {
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: no-repeat url("assets/dock.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1% 0 0 0;
+    height: 400px;
+    display: block;
+    position: relative;
+}
+
+h1 {
+    background: linear-gradient (to bottom, #33ccff 0%, #ff99cc 100%); 
+    color: rgb(50, 81, 205);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color:rgb(50, 81, 205);
+    margin: -24px 0 0 0;
+}
+.address {
+    display: inline-block;
+    color: white;
+    width: 170px;
+    margin: 100px 0 0 10px;
+    z-index: 10;
+}
+.directions{
+    background-color: white;
+    padding: 5px;
+}
+.menuPic {
+    width: 100%;
+    height: auto;
+}
+.imageBox {
+    display: flex;
+    margin: 20px 0 0 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.beachImages {
+    position: relative;
+    justify-content: space-around;
+    width: 150px;
+    height: auto;
+    margin: 5px;
+}
+.contacts{
+    display: block;
+    margin: 10px 0 0 90px;
+    width: 220px;
+}
+.moving-fish {
+    position:absolute;
+    height: 40px;
+    width: auto;
+}
+
+#small-fish{
+    height: auto;
+    z-index: 5;
+    transition-property: all;
+    transition:  1s;
+}
+.small-fish-at-rest {
+    width: 30px;
+    margin: 90px 0 0 150px;
+    transform: rotate(65deg);
+}
+.small-fish-jumping-up {
+    width: 35px;
+    margin: 60px 0 0 100px;
+    transform: rotate(65deg);
+    /* transition:  4s; */
+}
+.small-fish-jumping-down {
+    width: 50px;
+    margin: 120px 0 0 50px;
+    transform: rotate(-45deg);
+    transition:  4s;
+}
+
+#blue-fish{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: auto;
+    z-index: 5;
+    transition-property: all;
+    transition:  1s;
+}
+.blue-fish-at-rest {
+    width: 10px;
+    margin: 50px 0 0 50px;
+    transform: rotate(65deg);
+}
+.blue-fish-jumping-up {
+    width: 15px;
+    margin: 30px 0 0 100px;
+    transform: rotate(65deg);
+    /* transition:  4s; */
+}
+.blue-fish-jumping-down {
+    width: 18px;
+    margin: 60px 0 0 150px;
+    transform: rotate(-45deg);
+    transition:  4s;
+}
+
+#shark-fin{
+    height: auto;
+    z-index: 5;
+    transition-property: all;
+    transition:  ease-in-out 5s;
+}
+.shark-fin-at-rest {
+    width: 10px;
+    margin: 50px 0 0 270px;
+}
+.shark-fin-swimming {
+    width: 10px;
+    margin: 50px 0 0 50px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+.visibile{
+    visibility: visible;
+}

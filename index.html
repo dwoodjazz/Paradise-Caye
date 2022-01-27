@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1">
+        <meta charset="utf-8">
+        <title>Aurora's bar | grill | catering</title>
+        <meta property="og:title" content="Aurora's bar and gill in Ambergris Caye, Belize" />
+        <link rel="icon" type="image/x-icon" href="assets/shark -fin.jpg">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/script" src="scripts.js"></script>
+    </head>
+    <body>
+        
+        <main>
+            <nav>
+                <button id="menuBtn" type="button"><a href="#menuDiv">menu</a></button>
+                <button id="contactBtn" type="button"><a href="contacts.html">contact</a></button>
+                <button id="imagesBtn" type="button"><a href="#imageBox">images</a></button>
+            </nav>
+
+            <h1 id="title">Aurora's</h1>   
+            <h2>bar - grill - catering</h2>
+            <img class="moving-fish small-fish-at-rest hidden" id="small-fish" src="assets/tropical-fish4.png">
+            <img class="moving-fish blue-fish-at-rest hidden" id="blue-fish" src="assets/blue-fish4.png">
+            <img class="moving-fish shark-fin-at-rest hidden" id="shark-fin" src="assets/shark-fin4.png">
+            
+            <container class="address"> 
+                <h3>
+                    Secret Beach
+                    Ambergris Caye, 
+                    Belize 50220
+                    <br></br>
+                    501 629-4176 whatsapp
+                </h3>
+            </container>
+        </main>
+        <aside>
+            <div class="directions">
+                Located at Secret Beach. 4.5mi north of town, take left at the junction to Secret Beach. Drive 3.5mi more following the signs to Secret Beach. When you see the sea, look for Aurora's Bar & Grill sign on the left and turn left! 1 block down ON THE WATER!
+            </div>
+        </aside>
+        <section class="menu" id="menuDiv">
+            <img class=menuPic id="menu1" src="assets/menu1.jpg">
+            <img class=menuPic id="menut2" src="assets/menu2.jpg">
+        </section>
+        <section class="imageBox" id="imageBox">
+            <img class="beachImages" id="" src="assets/bar2.jpg">
+            <img class="beachImages" id="" src="assets/bar3.jpg">
+            <img class="beachImages" id="" src="assets/bar1.jpg">
+            <img class="beachImages" id="" src="assets/bar4.jpg">
+            <img class="beachImages" id="" src="assets/billiards.jpg">
+            <img class="beachImages" id="" src="assets/sign1.jpg">
+            <img class="beachImages" id="" src="assets/sign2.jpg">
+            <img class="beachImages" id="" src="assets/spike-tail-black-iguana.jpg">
+        </section>
+        <script>    
+            function smallFishJumps(){
+                smallFish=document.getElementById('small-fish');
+                smallFish.classList.replace("hidden","visible");
+                smallFish.classList.replace("small-fish-at-rest","small-fish-jumping-up");
+                setTimeout(() => {
+                    smallFish.classList.replace("small-fish-jumping-up","small-fish-jumping-down");
+
+                }, 400);
+                
+                setTimeout(() => {
+                    smallFish.classList.replace("visible","hidden");
+                }, 450);
+                setTimeout(() => {
+                    smallFish.classList.replace("small-fish-jumping-down","small-fish-at-rest");
+                }, 1200);
+
+
+            }
+            function blueFishJumps(){
+                blueFish=document.getElementById('blue-fish');
+                blueFish.classList.replace("hidden","visible");
+                blueFish.classList.replace("blue-fish-at-rest","blue-fish-jumping-up");
+                setTimeout(() => {
+                    blueFish.classList.replace("blue-fish-jumping-up","blue-fish-jumping-down");
+
+                }, 400);
+                
+                setTimeout(() => {
+                    blueFish.classList.replace("visible","hidden");
+                }, 450);
+                setTimeout(() => {
+                    blueFish.classList.replace("blue-fish-jumping-down","blue-fish-at-rest");
+                }, 1200);
+            }
+
+            function sharkFinSwims(){
+                sharkFin=document.getElementById('shark-fin');
+                sharkFin.classList.replace("hidden","visible");
+                sharkFin.classList.replace("shark-fin-at-rest","shark-fin-swimming");
+                // setTimeout(() => {
+                //     sharkFin.classList.replace("shark-fin-swimming","shark-fin-jumping-down");
+
+                // }, 400);
+                setTimeout(() => {
+                    sharkFin.classList.replace("visible","hidden");
+                }, 2050);
+                setTimeout(() => {
+                    sharkFin.classList.replace("shark-fin-swimming","shark-fin-at-rest");
+                }, 3800);
+            }
+            setInterval(smallFishJumps, 23603);
+            setInterval(blueFishJumps, 14200);
+            setInterval(sharkFinSwims, 21500);
+
+            
+        </script>
+    </body>
+    <footer>
+    </footer>
