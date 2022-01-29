@@ -193,6 +193,20 @@ h2 {
     width: 10px;
     margin: 90px 0 0 50px;
 }
+#spoonbill {
+    height: auto;
+    z-index: 5;
+    transition-property: all;
+    transition:  ease-in-out 3.5s;
+}
+.spoonbill-at-rest {
+    width: 85px;
+    margin: 0px 0 0 0px;
+}
+.spoonbill-flying {
+    width: 45px;
+    margin: -40px 0 0 100%;
+}
 
 .hidden {
     visibility: hidden;
@@ -201,7 +215,7 @@ h2 {
     visibility: visible;
 }
 #media{
-    /* display: none; */
+    display: none;
     border: crimson solid 2px;
     position: fixed;
     z-index: 10;
@@ -209,9 +223,14 @@ h2 {
     width: 20px;
     border-radius: 50px;
 }
+
+
+/* <-- MEDIA QUERIES  ----> */
+
+
 @media only screen and (min-width: 280px) and (max-width: 374px){
     #media{
-        display:inherit;
+        display: none;
         background-color: lightblue;
     }
     nav{
@@ -242,9 +261,20 @@ h2 {
         margin: 50px 0 0 50px;
     }
 }
+@media only screen and (min-width: 360px) {
+    #blotch{
+        margin: -25px 0 0 29%;
+    }
+    .shark-fin-at-rest {
+        margin: 70px 0 0 290px;
+    }
+    .shark-fin-swimming {
+        margin: 70px 0 0 50px;
+    }
+}
 @media only screen and (min-width: 375px) {
     #media{
-        display:inherit;
+        display:none;
         background-color: blue;
     }
     #blotch{
@@ -262,7 +292,7 @@ h2 {
 
 @media only screen and (min-width: 540px) {
     #media{
-        display:inherit;
+        display:none;
         background-color: darkblue;
     }
     main{
@@ -306,6 +336,9 @@ h2 {
     }
 }
 @media only screen and (min-width: 768px) {
+    #blotch{
+        margin: -25px 0 0 35%;
+    }
     .small-fish-at-rest {
         margin: 320px 0 0 150px;
     }
@@ -334,7 +367,7 @@ h2 {
 
 @media only screen and (min-width: 820px) {
     #media{
-        display:inherit;
+        display:none;
         background-color: lightyellow;
     }
     body{
@@ -344,7 +377,7 @@ h2 {
         height: 1200px;
     }
     #blotch{
-        margin: -25px 0 0 32%;
+        margin: -25px 0 0 22%;
     }
     .address {
         margin: -95px 0 0 10px;
@@ -388,7 +421,6 @@ h2 {
 @media only screen and (min-width: 820px) {
     #blotch{
         margin: -25px 0 0 38%;
-
     }
     .address{
         margin: 500px 0 0 10px;
@@ -418,15 +450,24 @@ h2 {
     .shark-fin-swimming {
         margin: 280px 0 0 150px;
     }
+    @media only screen and (min-width: 964px) {
+        .shark-fin-at-rest {
+            margin: 290px 0 0 590px;
+        }
+        .shark-fin-swimming {
+            margin: 290px 0 0 150px;
+        }
+
+    }   
 }
 @media only screen and (min-width: 1024px) {
  main{
      background-position:center;
      background-position-y: top;
-     height: 800px;
+     height: 1200px;
  }
  .address{
-     margin: 120px 0 0 250px;
+     margin: 540px 0 0 60px;
  }
  #blue-fish,#small-fish{
     width: 40px;
@@ -435,10 +476,10 @@ h2 {
     width: 30px;
 }
  .small-fish-at-rest {
-    margin: 140px 0 0 450px;
+    margin: 180px 0 0 450px;
 }
 .small-fish-jumping-up {
-    margin: 110px 0 0 300px;
+    margin: 150px 0 0 300px;
 }
 .small-fish-jumping-down {
     margin: 350px 0 0 250px;
@@ -454,42 +495,49 @@ h2 {
     margin: 170px 0 0 380px;
 }
 .shark-fin-at-rest {
-    margin: 200px 0 0 610px;
+    margin: 270px 0 0 610px;
 }
 .shark-fin-swimming {
-    margin: 200px 0 0 210px;
+    margin: 270px 0 0 210px;
     }   
 }
 @media only screen and (min-width: 1280px) {
     #blotch{
         margin: -25px 0 0 41%;
     }
+    #media{
+        display:none;
+    }
     .address{
-        margin: 250px 0 0 300px;
+        margin: 320px 0 0 400px;
     }
     .small-fish-at-rest {
-        margin: 270px 0 0 450px;
+        margin: 270px 0 0 550px;
     }
     .small-fish-jumping-up {
-        margin: 240px 0 0 300px;
+        margin: 240px 0 0 400px;
     }
     .small-fish-jumping-down {
-        margin: 520px 0 0 250px;
+        margin: 520px 0 0 350px;
     }
-    
     .blue-fish-at-rest {
-        margin: 230px 0 0 280px;
+        margin: 230px 0 0 330px;
     }
     .blue-fish-jumping-up {
-        margin: 200px 0 0 330px;
+        margin: 200px 0 0 380px;
     }
     .blue-fish-jumping-down {
         margin: 270px 0 0 380px;
     }
     .shark-fin-at-rest {
-        margin: 300px 0 0 610px;
+        margin: 300px 0 0 710px;
     }
     .shark-fin-swimming {
-        margin: 300px 0 0 150px;
+        margin: 300px 0 0 450px;
         }  
+}
+@media only screen and (min-width: 1478px) {
+    #blotch{
+        margin: -25px 0 0 42%;
+    }
 }

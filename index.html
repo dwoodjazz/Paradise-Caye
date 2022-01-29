@@ -4,7 +4,8 @@
         <meta name="viewport" content="initial-scale=1">
         <meta charset="utf-8">
         <title>Aurora's bar | grill | catering</title>
-        <meta property="og:title" content="Aurora's bar and gill in Ambergris Caye, Belize" />
+        <meta property="og:title" content="Aurora's bar and gill in Ambergris Caye, Belize"/>
+        <meta name="author" content="Douglas j Wood">
         <link rel="icon" type="image/x-icon" href="assets/shark -fin.jpg">
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +20,6 @@
             </div>
             <nav>
                 <button id="menuBtn" type="button" onclick="location.href='#menuDiv'">menu</button>
-
                 <button id="contactBtn" type="button" onclick="location.href='contacts.html'">contacts</button>
                 <button id="imagesBtn" type="button" onclick="location.href='#imageBox'">images</button>
             </nav>
@@ -30,7 +30,8 @@
             <img class="moving-fish small-fish-at-rest hidden" id="small-fish" src="assets/tropical-fish4.png">
             <img class="moving-fish blue-fish-at-rest hidden" id="blue-fish" src="assets/blue-fish4.png">
             <img class="moving-fish shark-fin-at-rest hidden" id="shark-fin" src="assets/shark-fin4.png">
-            
+            <img class="moving-fish spoonbill-at-rest hidden" id="spoonbill" src="assets/308523541-480px-removebg-preview.png">
+
             <container class="address"> 
                 <h3>
                     Secret Beach
@@ -74,7 +75,6 @@
                     smallFish.classList.replace("small-fish-jumping-up","small-fish-jumping-down");
 
                 }, 400);
-                
                 setTimeout(() => {
                     smallFish.classList.replace("visible","hidden");
                 }, 450);
@@ -92,7 +92,6 @@
                     blueFish.classList.replace("blue-fish-jumping-up","blue-fish-jumping-down");
 
                 }, 400);
-                
                 setTimeout(() => {
                     blueFish.classList.replace("visible","hidden");
                 }, 450);
@@ -105,10 +104,6 @@
                 sharkFin=document.getElementById('shark-fin');
                 sharkFin.classList.replace("hidden","visible");
                 sharkFin.classList.replace("shark-fin-at-rest","shark-fin-swimming");
-                // setTimeout(() => {
-                //     sharkFin.classList.replace("shark-fin-swimming","shark-fin-jumping-down");
-
-                // }, 400);
                 setTimeout(() => {
                     sharkFin.classList.replace("visible","hidden");
                 }, 2050);
@@ -116,12 +111,33 @@
                     sharkFin.classList.replace("shark-fin-swimming","shark-fin-at-rest");
                 }, 3800);
             }
+            function spoonbillFlies(){
+                spoonbill=document.getElementById('spoonbill');
+                spoonbill.classList.replace("hidden","visible");
+
+                setTimeout(() => {
+                    spoonbill.classList.replace("spoonbill-at-rest","spoonbill-flying");
+                }, 800);
+
+                // spoonbill.classList.replace("spoonbill-at-rest","spoonbill-flying");
+                setTimeout(() => {
+                    spoonbill.classList.replace("visible","hidden");
+                }, 2300);
+                setTimeout(() => {
+                    spoonbill.classList.replace("spoonbill-flying","spoonbill-at-rest");
+                }, 6500);
+            }
+            spoonbillFlies();
+
+            /* <---- These timers are used for debugging only----->
             setInterval(smallFishJumps, 2500);
             setInterval(blueFishJumps, 5500);
-            setInterval(sharkFinSwims, 2400);
-            // setInterval(smallFishJumps, 23603);
-            // setInterval(blueFishJumps, 14200);
-            // setInterval(sharkFinSwims, 21500);
+            setInterval(sharkFinSwims, 2400); */
+
+            setInterval(smallFishJumps, 23603);
+            setInterval(blueFishJumps, 14200);
+            setInterval(sharkFinSwims, 21500);
+            setInterval(spoonbillFlies, 12900);
 
             
         </script>
