@@ -14,17 +14,19 @@
         <script type="text/script" src="scripts.js"></script>
     </head>
     <body>
-        
         <main>
+            <div id="media">
+            </div>
             <nav>
                 <button id="menuBtn" type="button" onclick="location.href='#menuDiv'">menu</button>
 
-                <button id="contactBtn" type="button" onclick="location.href='contacts.html'">contact</button>
+                <button id="contactBtn" type="button" onclick="location.href='contacts.html'">contacts</button>
                 <button id="imagesBtn" type="button" onclick="location.href='#imageBox'">images</button>
             </nav>
-
+            <div id="blotch">
+            </div>
             <h1 id="title"><em>AURORA'S</em></h1>   
-            <h2>bar - grill - catering</h2>
+            <h2>BAR - GRILL - CATERING</h2>
             <img class="moving-fish small-fish-at-rest hidden" id="small-fish" src="assets/tropical-fish4.png">
             <img class="moving-fish blue-fish-at-rest hidden" id="blue-fish" src="assets/blue-fish4.png">
             <img class="moving-fish shark-fin-at-rest hidden" id="shark-fin" src="assets/shark-fin4.png">
@@ -114,9 +116,12 @@
                     sharkFin.classList.replace("shark-fin-swimming","shark-fin-at-rest");
                 }, 3800);
             }
-            setInterval(smallFishJumps, 23603);
-            setInterval(blueFishJumps, 14200);
-            setInterval(sharkFinSwims, 21500);
+            setInterval(smallFishJumps, 2500);
+            setInterval(blueFishJumps, 5500);
+            setInterval(sharkFinSwims, 2400);
+            // setInterval(smallFishJumps, 23603);
+            // setInterval(blueFishJumps, 14200);
+            // setInterval(sharkFinSwims, 21500);
 
             
         </script>

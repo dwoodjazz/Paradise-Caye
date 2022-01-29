@@ -5,7 +5,7 @@ font-family: 'Permanent Marker', cursive;
 font-family: 'Zen Kurenaido', sans-serif; */
 
 body{
-    height: 2500px;
+    height: 2550px;
 }
 nav {
     position: relative;
@@ -20,17 +20,17 @@ nav {
 button {
     font-family: 'Comfortaa', cursive;
     font-size: 12px;
+    box-shadow: #48707B 1px 1px 2px 1px;
     padding: -14px 0 14px 0;
     margin: 0 10px 0 0;
-    cursor: crosshair;
+    cursor: pointer;
     height: 20px;
     width: 80px ;
 }
 main {
-    /* font-family: 'Courier New', Courier, monospace; */
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: no-repeat url("assets/dock.jpg");
+    background: url("assets/dock.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1% 0 0 0;
@@ -38,23 +38,43 @@ main {
     display: block;
     position: relative;
 }
-
+#blotch{
+    /* position: relative; */
+    justify-items: center;
+    justify-content: center;
+    margin: -25px 0 0 20%;
+    background-color: #B27024;
+    box-shadow: #48707B 0px 0px 20px 20px;
+    width: 230px;
+    height: 140px;
+    z-index: 5;
+    opacity: 70%;
+    border-radius: 100px / 70px;
+}
 h1 {
+    position: relative;
     font-family: 'Mochiy Pop P One', sans-serif;
-    color: rgb(50, 81, 205);
+    margin: -110px 0 0 0;
+    color: #862F30;
     text-align: center;
+    z-index: 10;
+    cursor: pointer;
 }
 
 h2 {
+    position: relative;
     font-family: 'Zen Kurenaido', sans-serif; 
+    font-size: 18px;
+    letter-spacing: 2px;
     text-align: center;
-    color:rgb(50, 81, 205);
-    margin: -24px 0 0 0;
+    color:black;
+    margin: 7px 0 0 0;
+    z-index: 10;
 }
 #contact-subheader{
     color: black;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 60px 0 0 0;
+    margin: 40px 0 0 0;
 }
 .address {
     display: inline-block;
@@ -105,7 +125,7 @@ h2 {
     margin: 0 0 0 20px;
 }
 .moving-fish {
-    position:absolute;
+    position: absolute;
     height: 40px;
     width: auto;
 }
@@ -135,28 +155,27 @@ h2 {
 }
 
 #blue-fish{
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
     height: auto;
     z-index: 5;
+    width:40px;
     transition-property: all;
     transition:  1s;
 }
 .blue-fish-at-rest {
     width: 10px;
     margin: 50px 0 0 50px;
-    transform: rotate(65deg);
+    transform: rotate(-40deg);
 }
 .blue-fish-jumping-up {
     width: 15px;
-    margin: 30px 0 0 100px;
-    transform: rotate(65deg);
+    margin: 40px 0 0 100px;
+    transform: rotate(-45deg);
     /* transition:  4s; */
 }
 .blue-fish-jumping-down {
     width: 18px;
-    margin: 60px 0 0 150px;
-    transform: rotate(-45deg);
+    margin: 90px 0 0 150px;
+    transform: rotate(85deg);
     transition:  4s;
 }
 
@@ -168,11 +187,11 @@ h2 {
 }
 .shark-fin-at-rest {
     width: 10px;
-    margin: 50px 0 0 270px;
+    margin: 90px 0 0 270px;
 }
 .shark-fin-swimming {
     width: 10px;
-    margin: 50px 0 0 50px;
+    margin: 90px 0 0 50px;
 }
 
 .hidden {
@@ -180,4 +199,297 @@ h2 {
 }
 .visibile{
     visibility: visible;
+}
+#media{
+    /* display: none; */
+    border: crimson solid 2px;
+    position: fixed;
+    z-index: 10;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+}
+@media only screen and (min-width: 280px) and (max-width: 374px){
+    #media{
+        display:inherit;
+        background-color: lightblue;
+    }
+    nav{
+        width: 100%;
+    }
+    button{
+        width: 65px;
+    }
+    #blotch{
+        margin: -25px 0 0 22%;
+        width: 140px;
+        height: 100px;
+    }
+    h1{
+        margin: -72px 0 0 -5px;
+        font-size: 16px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    #shark-fin{
+        width: 20px;
+    }
+    .shark-fin-at-rest {
+        margin:50px 0 0 290px;
+    }
+    .shark-fin-swimming {
+        margin: 50px 0 0 50px;
+    }
+}
+@media only screen and (min-width: 375px) {
+    #media{
+        display:inherit;
+        background-color: blue;
+    }
+    #blotch{
+        margin: -25px 0 0 19%;
+    }
+}
+@media only screen and (min-width: 393px) {
+    .shark-fin-at-rest {
+        margin:70px 0 0 290px;
+    }
+    .shark-fin-swimming {
+        margin: 70px 0 0 50px;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    #media{
+        display:inherit;
+        background-color: darkblue;
+    }
+    main{
+        height: 700px;
+        background-size: 100vmin
+    }
+    #blotch{
+        margin: -25px 0 0 29%;
+    }
+    .address {
+        margin: 205px 0 0 10px;
+        width: 250px;
+        font-size: 26px;
+    }
+    #shark-fin,#blue-fish,#small-fish{
+        width: 40px;
+    }
+    .small-fish-at-rest {
+        margin: 260px 0 0 150px;
+    }
+    .small-fish-jumping-up {
+        margin: 260px 0 0 100px;
+    }
+    .small-fish-jumping-down {
+        margin: 390px 0 0 50px;
+    }
+    .blue-fish-at-rest {
+        margin: 160px 0 0 180px;
+    }
+    .blue-fish-jumping-up {
+        margin: 180px 0 0 230px;
+    }
+    .blue-fish-jumping-down {
+        margin: 210px 0 0 280px;
+    }
+    .shark-fin-at-rest {
+        margin: 110px 0 0 390px;
+    }
+    .shark-fin-swimming {
+        margin: 110px 0 0 150px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .small-fish-at-rest {
+        margin: 320px 0 0 150px;
+    }
+    .small-fish-jumping-up {
+        margin: 290px 0 0 100px;
+    }
+    .small-fish-jumping-down {
+        margin: 450px 0 0 50px;
+    }
+    .blue-fish-at-rest {
+        margin: 200px 0 0 180px;
+    }
+    .blue-fish-jumping-up {
+        margin: 200px 0 0 230px;
+    }
+    .blue-fish-jumping-down {
+        margin: 250px 0 0 280px;
+    }
+    .shark-fin-at-rest {
+        margin: 210px 0 0 390px;
+    }
+    .shark-fin-swimming {
+        margin: 210px 0 0 150px;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    #media{
+        display:inherit;
+        background-color: lightyellow;
+    }
+    body{
+        height: 4300px;
+    }
+    main{
+        height: 1200px;
+    }
+    #blotch{
+        margin: -25px 0 0 32%;
+    }
+    .address {
+        margin: -95px 0 0 10px;
+        font-size: 30px;
+        width: 300px;
+        z-index: 9;
+    }
+    #blue-fish,#small-fish{
+        width: 80px;
+    }
+    #shark-fin{
+        width: 50px;
+    }
+    .small-fish-at-rest {
+        margin: 390px 0 0 150px;
+    }
+    .small-fish-jumping-up {
+        margin: 360px 0 0 100px;
+    }
+    .small-fish-jumping-down {
+        margin: 520px 0 0 50px;
+    }
+
+    .blue-fish-at-rest {
+        margin: 200px 0 0 180px;
+    }
+    .blue-fish-jumping-up {
+        margin: 210px 0 0 230px;
+    }
+    .blue-fish-jumping-down {
+        margin: 240px 0 0 280px;
+    }
+    .shark-fin-at-rest {
+        margin: 250px 0 0 590px;
+
+    }
+    .shark-fin-swimming {
+        margin: 250px 0 0 150px;
+    }
+}
+@media only screen and (min-width: 820px) {
+    #blotch{
+        margin: -25px 0 0 38%;
+
+    }
+    .address{
+        margin: 500px 0 0 10px;
+    }
+    .small-fish-at-rest {
+        margin: 390px 0 0 150px;
+    }
+    .small-fish-jumping-up {
+        margin: 360px 0 0 100px;
+    }
+    .small-fish-jumping-down {
+        margin: 520px 0 0 50px;
+    }
+
+    .blue-fish-at-rest {
+        margin: 230px 0 0 180px;
+    }
+    .blue-fish-jumping-up {
+        margin: 240px 0 0 230px;
+    }
+    .blue-fish-jumping-down {
+        margin: 270px 0 0 280px;
+    }
+    .shark-fin-at-rest {
+        margin: 280px 0 0 590px;
+    }
+    .shark-fin-swimming {
+        margin: 280px 0 0 150px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+ main{
+     background-position:center;
+     background-position-y: top;
+     height: 800px;
+ }
+ .address{
+     margin: 120px 0 0 250px;
+ }
+ #blue-fish,#small-fish{
+    width: 40px;
+}
+#shark-fin{
+    width: 30px;
+}
+ .small-fish-at-rest {
+    margin: 140px 0 0 450px;
+}
+.small-fish-jumping-up {
+    margin: 110px 0 0 300px;
+}
+.small-fish-jumping-down {
+    margin: 350px 0 0 250px;
+}
+
+.blue-fish-at-rest {
+    margin: 130px 0 0 280px;
+}
+.blue-fish-jumping-up {
+    margin: 100px 0 0 330px;
+}
+.blue-fish-jumping-down {
+    margin: 170px 0 0 380px;
+}
+.shark-fin-at-rest {
+    margin: 200px 0 0 610px;
+}
+.shark-fin-swimming {
+    margin: 200px 0 0 210px;
+    }   
+}
+@media only screen and (min-width: 1280px) {
+    #blotch{
+        margin: -25px 0 0 41%;
+    }
+    .address{
+        margin: 250px 0 0 300px;
+    }
+    .small-fish-at-rest {
+        margin: 270px 0 0 450px;
+    }
+    .small-fish-jumping-up {
+        margin: 240px 0 0 300px;
+    }
+    .small-fish-jumping-down {
+        margin: 520px 0 0 250px;
+    }
+    
+    .blue-fish-at-rest {
+        margin: 230px 0 0 280px;
+    }
+    .blue-fish-jumping-up {
+        margin: 200px 0 0 330px;
+    }
+    .blue-fish-jumping-down {
+        margin: 270px 0 0 380px;
+    }
+    .shark-fin-at-rest {
+        margin: 300px 0 0 610px;
+    }
+    .shark-fin-swimming {
+        margin: 300px 0 0 150px;
+        }  
 }
