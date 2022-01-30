@@ -277,7 +277,7 @@ h2 {
 }
 @media only screen and (min-width: 375px) {
     #media{
-        display:none;
+        display:inherit;
         background-color: blue;
     }
     #blotch{
