@@ -14,7 +14,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/script" src="scripts.js"></script>
     </head>
-    <body>
+    <body onload="spoonbillFlies()">
         <main>
             <div id="media">
             </div>
@@ -62,7 +62,7 @@
             <img class="beachImages" title="a spike-tail iguana" alt="a spike-tail iguana" src="assets/spike-tail-black-iguana copy.png">
         </section>
 
-
+        <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
         <script> type="text/javascript"  
             // document.getElementById("menuBtn").onclick = function () {
             // location.href = "www.cnn.com";
@@ -125,7 +125,8 @@
                     spoonbill.classList.replace("spoonbill-flying","spoonbill-at-rest");
                 }, 9500);
             }
-            spoonbillFlies();
+
+            // spoonbillFlies();
 
             /* <---- These timers are used for debugging only----->
             setInterval(smallFishJumps, 2500);

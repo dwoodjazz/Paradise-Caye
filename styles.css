@@ -208,7 +208,7 @@ h2 {
 }
 .spoonbill-flying {
     width: 45px;
-    margin: -40px 0 0 100%;
+    margin: -40px 0 0 400px;
 }
 
 .hidden {
@@ -502,7 +502,15 @@ h2 {
 }
 .shark-fin-swimming {
     margin: 270px 0 0 210px;
-    }   
+    }  
+.spoonbill-at-rest {
+    width: 85px;
+    margin: 0px 0 0 150px;
+}
+.spoonbill-flying {
+    width: 45px;
+    margin: -40px 0 0 1050px;
+    }
 }
 @media only screen and (min-width: 1280px) {
     #blotch{
@@ -538,6 +546,7 @@ h2 {
     .shark-fin-swimming {
         margin: 300px 0 0 450px;
         }  
+        
 }
 @media only screen and (min-width: 1478px) {
     #blotch{
