@@ -337,6 +337,13 @@ h2 {
     .shark-fin-swimming {
         margin: 110px 0 0 150px;
     }
+    .contacts{
+    display: block;
+    position:relative;  
+    margin: 30px 0 0 40%;
+    width: 220px;
+}
+
 }
 @media only screen and (min-width: 768px) {
     #blotch{
@@ -382,8 +389,8 @@ h2 {
     #blotch{
         margin: -25px 0 0 22%;
     }
-    .address {
-        margin: -95px 0 0 10px;
+    #phone {
+        margin: -125px 0 0 10px;
         font-size: 30px;
         width: 300px;
         z-index: 9;
@@ -470,7 +477,7 @@ h2 {
      height: 1200px;
  }
  .address{
-     margin: 540px 0 0 60px;
+     margin: 540px 0 0 160px;
  }
  #blue-fish,#small-fish{
     width: 40px;
@@ -546,6 +553,10 @@ h2 {
     .shark-fin-swimming {
         margin: 300px 0 0 450px;
         }  
+    .contacts{
+        margin: 10px 0 0 43%;
+        width: 220px;
+    }
         
 }
 @media only screen and (min-width: 1478px) {
