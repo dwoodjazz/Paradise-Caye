@@ -117,15 +117,13 @@
 
                 setTimeout(() => {
                     spoonbill.classList.replace("spoonbill-at-rest","spoonbill-flying");
-                }, 800);
-
-                // spoonbill.classList.replace("spoonbill-at-rest","spoonbill-flying");
+                }, 1800);                
                 setTimeout(() => {
                     spoonbill.classList.replace("visible","hidden");
-                }, 2300);
+                }, 4300);
                 setTimeout(() => {
                     spoonbill.classList.replace("spoonbill-flying","spoonbill-at-rest");
-                }, 6500);
+                }, 9500);
             }
             spoonbillFlies();
 
@@ -137,7 +135,7 @@
             setInterval(smallFishJumps, 23603);
             setInterval(blueFishJumps, 14200);
             setInterval(sharkFinSwims, 21500);
-            setInterval(spoonbillFlies, 12900);
+            // setInterval(spoonbillFlies, 12900);
 
             
         </script>

@@ -200,7 +200,7 @@ h2 {
     height: auto;
     z-index: 5;
     transition-property: all;
-    transition:  ease-in-out 3.5s;
+    transition:  ease-in-out 5.5s;
 }
 .spoonbill-at-rest {
     width: 85px;
